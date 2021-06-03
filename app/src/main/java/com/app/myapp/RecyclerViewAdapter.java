@@ -68,7 +68,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         // 把資料設定給 ViewHolder。
         Random rand = new Random();
         int x = rand.nextInt(3);
-        Log.d("x= ", String.valueOf(x));
         viewHolder.mImgView.setImageResource(images[x]);
         viewHolder.mTxt.setText(mListString.get(i));
     }
