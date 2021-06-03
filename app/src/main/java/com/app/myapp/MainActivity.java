@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+
         // 建立RecyclerView的Adapter物件，傳入包含項目清單的List物件
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(listStr);
 
